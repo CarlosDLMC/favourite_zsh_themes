@@ -6,3 +6,5 @@ Además, para que la terminal se vea bonita:
 
 Color de texto: #FFFFFF
 Color de fondo: #2C2D2E
+
+Además, el plugin que usamos es zsh-autosuggestions
