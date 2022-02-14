@@ -1,3 +1,6 @@
+Para instalar zsh:
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 Para que el tema de agnoster funcione bien, hay que tener una fuente compatible. Este problema se soluciona simplemente con:
 
 sudo apt-get install fonts-powerline
