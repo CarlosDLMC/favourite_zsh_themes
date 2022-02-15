@@ -17,3 +17,12 @@ Para instalarlo:
 3-Abrimos ~/.zshrc 
 4-Añadimos zsh-autosuggestions en la tupla que se llama plugins (SIN COMAS).
 5-Reiniciamos terminal
+
+To view available speed governors use this command:
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
+
+If you do have more than one governor you can check what is currently in use with this command:
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+
+To change your processor to performance mode use:
+echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
