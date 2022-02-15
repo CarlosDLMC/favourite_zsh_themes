@@ -26,3 +26,8 @@ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 
 To change your processor to performance mode use:
 echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+
+Si el pc laggea cuando está cargando:
+To make this a permanent solution, create/edit /etc/modprobe.d/local.conf to add the following line:
+
+options drm_kms_helper poll=N
