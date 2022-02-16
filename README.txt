@@ -31,3 +31,15 @@ Si el pc laggea cuando está cargando:
 To make this a permanent solution, create/edit /etc/modprobe.d/local.conf to add the following line:
 
 options drm_kms_helper poll=N
+
+Also try this if the laptop runs slow when plugged in:
+Terminal
+
+gksu gedit /etc/default/grub
+
+The option you want to edit is:
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+GRUB_CMDLINE_LINUX=""
+
+You can either add drm_kms_helper.poll=N after the splash parameter in the first line or add inside the quoted part in the second part.
